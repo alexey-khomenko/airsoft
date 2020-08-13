@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="dist/lib/datetimepicker.css"/>
+    <link rel="stylesheet" href="dist/style.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Airsoft-rus</title>
+</head>
+<body>
+<form class="layout">
+    <section class="bxmt-d_p">
+        <div class="bxmt-d_p-heading">
+            Выберите способ доставки
+        </div>
+        <div class="bxmt-d_p-grid">
+
+            <input type="radio" name="delivery" id="courier" value="courier"/>
+            <div class="bxmt-d_p-card">
+                <label class="bxmt-d_p-element bxmt--delivery bxmt--courier" for="courier">
+                    <span class="bxmt-d_p-title">
+                        Курьером до двери
+                    </span>
+                    <span class="bxmt-d_p-text bxmt--hidden_xs">
+                        Количество дней: <strong>4 дня</strong>
+                    </span>
+                    <span class="bxmt-d_p-text">
+                        Стоимость: <strong>0 рублей</strong>
+                    </span>
+                    <span class="bxmt-d_p-link">
+                        <details class="bxmt-d_p-details">
+                            <summary class="bxmt-d_p-summary">Подробнее</summary>
+                            <div class="bxmt-d_p-popover">
+                                <div class="bxmt-d_p-popover-arrow"></div>
+                                <div class="bxmt-d_p-popover-body">
+                                    <p>Нажимая кнопку "Оформить заказ", Я подтверждаю, что ознакомлен и согласен с условиями <a
+                                            href="#">Публичной оферты</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </span>
+                </label>
+                <div class="bxmt-d_p-sub_element">
+                    <div class="bxmt-d_p-marker">
+                        До бесплатной доставки осталось: <strong>1300&nbsp;р.</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bxmt-d_p-sub_grid">
+                <div class="bxmt-d_p-sub_grid-element bxmt--address">
+                    <label class="bxmt-d_p-label" for="address">Адрес доставки</label>
+                    <input type="text" name="address" id="address" class="bxmt-d_p-input" autocomplete="off"
+                           placeholder="ул. Ленина, д. 23, кв. 25"/>
+                    <span class="bxmt-d_p-clear d-none">&times;</span>
+                </div>
+                <div class="bxmt-d_p-sub_grid-element bxmt--date">
+                    <label class="bxmt-d_p-label" for="date">Дата доставки</label>
+                    <input type="text" name="date" id="date" class="bxmt-d_p-input" autocomplete="off"
+                           placeholder="дд.мм.гггг" readonly="readonly"/>
+                    <span class="bxmt-d_p-clear d-none">&times;</span>
+                    <div class="bxmt-d_p-datetimepicker bxmt--datepicker d-none"></div>
+                </div>
+                <div class="bxmt-d_p-sub_grid-element bxmt--time">
+                    <label class="bxmt-d_p-label">Время доставки</label>
+                    <div class="bxmt-d_p-times">
+                        <input type="radio" name="time" id="time-1" value="9:00 - 18:00" checked="checked"/>
+                        <label for="time-1" class="bxmt-d_p-time">
+                            <span>9:00 - 18:00</span>
+                        </label>
+                        <input type="radio" name="time" id="time-2" value="18:00 - 24:00"/>
+                        <label for="time-2" class="bxmt-d_p-time">
+                            <span>18:00 - 24:00</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="delivery" id="airsoft" value="airsoft"/>
+            <div class="bxmt-d_p-card">
+                <label class="bxmt-d_p-element bxmt--delivery bxmt--airsoft" for="airsoft">
+                    <span class="bxmt-d_p-title">
+                        Самовывоз
+                    </span>
+                    <span class="bxmt-d_p-text bxmt--hidden_xs">
+                        Количество дней: <strong>4 дня</strong>
+                    </span>
+                    <span class="bxmt-d_p-text">
+                        Стоимость: <strong>0 рублей</strong>
+                    </span>
+                    <span class="bxmt-d_p-link">
+                        <details class="bxmt-d_p-details">
+                            <summary class="bxmt-d_p-summary">Подробнее</summary>
+                            <div class="bxmt-d_p-popover">
+                                <div class="bxmt-d_p-popover-arrow"></div>
+                                <div class="bxmt-d_p-popover-body">
+                                    <p>Нажимая кнопку "Оформить заказ", Я подтверждаю, что ознакомлен и согласен с условиями <a
+                                            href="#">Публичной оферты</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </span>
+                </label>
+                <div class="bxmt-d_p-sub_element">
+
+                </div>
+            </div>
+
+            <div class="bxmt-d_p-sub_grid">
+                <div class="bxmt-d_p-sub_grid-element bxmt--department">
+                    <label class="bxmt-d_p-label" for="department">Выберите отделение</label>
+                    <div class="bxmt-d_p-select">
+                        <input type="text" name="date" id="department" class="bxmt-d_p-input" autocomplete="off"
+                               readonly="readonly"/>
+                        <div class="bxmt-d_p-options d-none">
+                            <div class="bxmt-d_p-option" data-value="1">3-я Парковая, 33</div>
+                            <div class="bxmt-d_p-option" data-value="2">Б. Сампсониевский, 76</div>
+                            <div class="bxmt-d_p-option" data-value="3">Хохрякова, 72</div>
+                            <div class="bxmt-d_p-option" data-value="4">Студеная, 9</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="delivery" id="sdek" value="sdek"/>
+            <div class="bxmt-d_p-card">
+                <label class="bxmt-d_p-element bxmt--delivery bxmt--sdek" for="sdek">
+                    <span class="bxmt-d_p-title">
+                        Доставка СДЭК до пункта выдачи товара в вашем городе
+                    </span>
+                    <span class="bxmt-d_p-text bxmt--hidden_xs">
+                        Количество дней: <strong>4 дня</strong>
+                    </span>
+                    <span class="bxmt-d_p-text">
+                        Стоимость: <strong>0 рублей</strong>
+                    </span>
+                    <span class="bxmt-d_p-link">
+                        <details class="bxmt-d_p-details">
+                            <summary class="bxmt-d_p-summary">Подробнее</summary>
+                            <div class="bxmt-d_p-popover">
+                                <div class="bxmt-d_p-popover-arrow"></div>
+                                <div class="bxmt-d_p-popover-body">
+                                    <p>Нажимая кнопку "Оформить заказ", Я подтверждаю, что ознакомлен и согласен с условиями <a
+                                            href="#">Публичной оферты</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </span>
+                </label>
+                <div class="bxmt-d_p-sub_element">
+                    <div class="bxmt-d_p-marker">
+                        До бесплатной доставки осталось: <strong>300&nbsp;р.</strong>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="delivery" id="pickpoint" value="pickpoint"/>
+            <div class="bxmt-d_p-card">
+                <label class="bxmt-d_p-element bxmt--delivery bxmt--pickpoint" for="pickpoint">
+                    <span class="bxmt-d_p-title">
+                        Постматы PickPoint
+                    </span>
+                    <span class="bxmt-d_p-text bxmt--hidden_xs">
+                        Количество дней: <strong>4 дня</strong>
+                    </span>
+                    <span class="bxmt-d_p-text">
+                        Стоимость: <strong>0 рублей</strong>
+                    </span>
+                    <span class="bxmt-d_p-link">
+                        <details class="bxmt-d_p-details">
+                            <summary class="bxmt-d_p-summary">Подробнее</summary>
+                            <div class="bxmt-d_p-popover">
+                                <div class="bxmt-d_p-popover-arrow"></div>
+                                <div class="bxmt-d_p-popover-body">
+                                    <p>Нажимая кнопку "Оформить заказ", Я подтверждаю, что ознакомлен и согласен с условиями <a
+                                            href="#">Публичной оферты</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </span>
+                </label>
+                <div class="bxmt-d_p-sub_element">
+                    <div class="bxmt-d_p-marker">
+                        До бесплатной доставки осталось: <strong>300&nbsp;р.</strong>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="delivery" id="tc" value="tc"/>
+            <div class="bxmt-d_p-card">
+                <label class="bxmt-d_p-element bxmt--delivery bxmt--tc" for="tc">
+                    <span class="bxmt-d_p-title">
+                        До склада Транспортной компании
+                    </span>
+                    <span class="bxmt-d_p-text bxmt--hidden_xs">
+                        Количество дней: <strong>4 дня</strong>
+                    </span>
+                    <span class="bxmt-d_p-text">
+                        Стоимость: <strong>0 рублей</strong>
+                    </span>
+                    <span class="bxmt-d_p-link">
+                        <details class="bxmt-d_p-details">
+                            <summary class="bxmt-d_p-summary">Подробнее</summary>
+                            <div class="bxmt-d_p-popover">
+                                <div class="bxmt-d_p-popover-arrow"></div>
+                                <div class="bxmt-d_p-popover-body">
+                                    <p>Нажимая кнопку "Оформить заказ", Я подтверждаю, что ознакомлен и согласен с условиями <a
+                                            href="#">Публичной оферты</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </span>
+                </label>
+                <div class="bxmt-d_p-sub_element">
+                    <div class="bxmt-d_p-marker">
+                        До бесплатной доставки осталось: <strong>300&nbsp;р.</strong>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="delivery" id="dostavista" value="dostavista"/>
+            <div class="bxmt-d_p-card">
+                <label class="bxmt-d_p-element bxmt--delivery bxmt--dostavista" for="dostavista">
+                    <span class="bxmt-d_p-title">
+                        Курьером за 3 часа в пределах МКАД
+                    </span>
+                    <span class="bxmt-d_p-text bxmt--hidden_xs">
+                        Количество дней: <strong>4 дня</strong>
+                    </span>
+                    <span class="bxmt-d_p-text">
+                        Стоимость: <strong>0 рублей</strong>
+                    </span>
+                    <span class="bxmt-d_p-link">
+                        <details class="bxmt-d_p-details">
+                            <summary class="bxmt-d_p-summary">Подробнее</summary>
+                            <div class="bxmt-d_p-popover">
+                                <div class="bxmt-d_p-popover-arrow"></div>
+                                <div class="bxmt-d_p-popover-body">
+                                    <p>Нажимая кнопку "Оформить заказ", Я подтверждаю, что ознакомлен и
+                                        согласен с условиями <a href="#">Публичной оферты</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </span>
+                </label>
+                <div class="bxmt-d_p-sub_element">
+                    <div class="bxmt-d_p-marker">
+                        До бесплатной доставки осталось: <strong>300&nbsp;р.</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="bxmt-d_p">
+        <div class="bxmt-d_p-heading">
+            Выберите способы оплаты
+        </div>
+        <div class="bxmt-d_p-grid">
+
+            <input type="radio" name="payment" id="card" value="card"/>
+            <div class="bxmt-d_p-card">
+                <label class="bxmt-d_p-element bxmt--payment bxmt--card" for="card">
+                    <span class="bxmt-d_p-title bxmt--hidden_xs">
+                        Оплата банковской картой
+                    </span>
+                    <span class="bxmt-d_p-title bsmt--visible_xs">
+                        Оплата картой
+                    </span>
+                    <span class="bxmt-d_p-text">
+                        Будет начислено: <strong>10 бонусов</strong>
+                    </span>
+                    <span class="bxmt-d_p-link">
+                        <details class="bxmt-d_p-details">
+                            <summary class="bxmt-d_p-summary">Подробнее</summary>
+                            <div class="bxmt-d_p-popover">
+                                <div class="bxmt-d_p-popover-arrow"></div>
+                                <div class="bxmt-d_p-popover-body">
+                                    <p>Нажимая кнопку "Оформить заказ", Я подтверждаю, что ознакомлен и согласен с условиями <a
+                                            href="#">Публичной оферты</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </span>
+                </label>
+                <div class="bxmt-d_p-sub_element"></div>
+            </div>
+
+            <input type="radio" name="payment" id="tinkoff" value="tinkoff"/>
+            <div class="bxmt-d_p-card">
+                <label class="bxmt-d_p-element bxmt--payment bxmt--tinkoff" for="tinkoff">
+                    <span class="bxmt-d_p-title">
+                        Рассрочка Тинькофф
+                    </span>
+                    <span class="bxmt-d_p-text">
+                        Будет начислено: <strong>10 бонусов</strong>
+                    </span>
+                    <span class="bxmt-d_p-link">
+                        <details class="bxmt-d_p-details">
+                            <summary class="bxmt-d_p-summary">Подробнее</summary>
+                            <div class="bxmt-d_p-popover">
+                                <div class="bxmt-d_p-popover-arrow"></div>
+                                <div class="bxmt-d_p-popover-body">
+                                    <p>Нажимая кнопку "Оформить заказ", Я подтверждаю, что ознакомлен и согласен с условиями <a
+                                            href="#">Публичной оферты</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </span>
+                </label>
+                <div class="bxmt-d_p-sub_element"></div>
+            </div>
+
+            <input type="radio" name="payment" id="sberbank" value="sberbank"/>
+            <div class="bxmt-d_p-card">
+                <label class="bxmt-d_p-element bxmt--payment bxmt--sberbank" for="sberbank">
+                    <span class="bxmt-d_p-title">
+                        Кредит Сбербанк
+                    </span>
+                    <span class="bxmt-d_p-text">
+                        Будет начислено: <strong>10 бонусов</strong>
+                    </span>
+                    <span class="bxmt-d_p-link">
+                        <details class="bxmt-d_p-details">
+                            <summary class="bxmt-d_p-summary">Подробнее</summary>
+                            <div class="bxmt-d_p-popover">
+                                <div class="bxmt-d_p-popover-arrow"></div>
+                                <div class="bxmt-d_p-popover-body">
+                                    <p>Нажимая кнопку "Оформить заказ", Я подтверждаю, что ознакомлен и согласен с условиями <a
+                                            href="#">Публичной оферты</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </span>
+                </label>
+                <div class="bxmt-d_p-sub_element"></div>
+            </div>
+
+            <input type="radio" name="payment" id="cash" value="cash"/>
+            <div class="bxmt-d_p-card">
+                <label class="bxmt-d_p-element bxmt--payment bxmt--cash" for="cash">
+                    <span class="bxmt-d_p-title">
+                        Оплата наличными
+                    </span>
+                    <span class="bxmt-d_p-text">
+                        Будет начислено: <strong>10 бонусов</strong>
+                    </span>
+                    <span class="bxmt-d_p-link">
+                        <details class="bxmt-d_p-details">
+                            <summary class="bxmt-d_p-summary">Подробнее</summary>
+                            <div class="bxmt-d_p-popover">
+                                <div class="bxmt-d_p-popover-arrow"></div>
+                                <div class="bxmt-d_p-popover-body">
+                                    <p>Нажимая кнопку "Оформить заказ", Я подтверждаю, что ознакомлен и согласен с условиями <a
+                                            href="#">Публичной оферты</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </span>
+                </label>
+                <div class="bxmt-d_p-sub_element"></div>
+            </div>
+        </div>
+    </section>
+</form>
+<script src="dist/lib/jquery-3.4.1.min.js"></script>
+<script src="dist/lib/pickmeup.min.js"></script>
+<script src="dist/bundle.js"></script>
+</body>
+</html>

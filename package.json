@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "css-loader": "^3.4.2",
     "file-loader": "^6.0.0",
